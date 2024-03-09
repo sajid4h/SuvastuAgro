@@ -36,8 +36,7 @@ header{
     width: 100%;
 
     background-image: url('../media/header/sssss.jpg');
-    /* object-fit: contain; */
-    /* object-position: center; */
+  
     background-size: cover;
     background-position: center;
    
@@ -133,53 +132,37 @@ nav .navitem{
 
 /* aboutus css start */
 .aboutusSection{
-    width:100%;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    line-height:2.5;
-    
-    /* flex-wrap: wrap; */
-   
-    /* align-items: center; */
+    min-height: 40vh;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;   
+    justify-content: space-around; 
 }
 
 .aboutusH1{
-    width: 40%;
+    width: 30%;
     text-transform: uppercase;
     font-weight:800;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color:black;
     
     
     
 }
-.aboutusH1::first-letter{
-    /* font-size: 10vi; */
-    font-size: 10vw;
-    /* position: relative; */
-    color: rgb(173,216,230);  
 
-}
 .aboutusSection .infoDiv{
-    width: 60%;
-    text-align: justify;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    color: black;
-    /* width: 50%; */
- 
-}
-.aboutTxt{
-    width: 90%;
-    min-height: 50vh;
-    /* background: #000; */
-    text-align: center;
+    width: 65%;
+    text-align:center;
     display: flex;
     align-items: center;
 }
+.infoDiv .aboutTxt{
+    line-height:2.6;
+    
+  }
+
 /* aboutus css end */
 
 /* product css start */
@@ -255,8 +238,6 @@ background: linear-gradient(135deg, #74CCCC, #4B3BCA);
     justify-content: space-evenly;
     text-align: center;
     
-    /* background: #ee0808; */
-    /* margin: 20px 10px; */
     
 }
 .contactusSection .socialDiv{
@@ -291,7 +272,7 @@ footer{
     margin-top: 5px;
 }
 
-/* @media screen and (max-width:900px){ */
+
 @media screen and (max-width : 992px){
     
     header{
@@ -304,15 +285,26 @@ footer{
         width: 100%;
         background: transparent;
     }
-    .aboutusH1{
-        position: relative;
-        transform: translate(5%,20%);
-     
-    }
-    .aboutTxt{
-        align-items: center;
-        font-size: smaller;
-    }
+  .aboutusSection{
+    margin-top: 10px;
+    width: 99%;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .aboutusH1{
+    
+    width: 30%;
+    font-size: 32px;
+  }
+  .aboutusSection .infoDiv{
+    width: 60%;
+    font-size: 18px;
+    color: black;
+    
+  }
+
+   
   
     footer{
         font-size: medium;
@@ -330,6 +322,7 @@ footer{
         background-repeat: no-repeat;
     }
     .aboutusSection{
+        margin-top: 30px;
         min-height: 20vh;
         display: flex;
         flex-direction: column;
