@@ -100,11 +100,11 @@ nav .navitem{
     font-size: 1em;
     letter-spacing: 1px;
     font-weight: 500;
-    color:rgb(241, 225, 0);
+    color:rgb(153, 0, 241);
 }
 .Nava:hover{
 
-    color:rgb(241, 225, 0);
+    color:rgb(153, 0, 241);
     transition: all 1s;
 }
 .Nava::after{
@@ -113,7 +113,7 @@ nav .navitem{
     width: 0;
     height: 2px;
     color: black;
-    background-color: red;
+    background-color: rgb(153, 0, 241);
     transition: all 0.3s;
 
 }
@@ -123,7 +123,7 @@ nav .navitem{
     width: 100%;
     height: 2px;
     color: black;
-    background-color: red;
+    background-color: rgb(153, 0, 241);
     transition: all 0.5s;
 }
 
@@ -147,7 +147,8 @@ nav .navitem{
     justify-content: center;
     align-items: center;
     color:black;
-    
+    font-size: 46px;
+    color: rgb(153, 0, 241);
     
     
 }
@@ -240,17 +241,7 @@ background: linear-gradient(135deg, #74CCCC, #4B3BCA);
     
     
 }
-.contactusSection .socialDiv{
 
-    min-height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-.socialNetworkIcon{
-    display: flex;
-}
 /* contactus css end */
 
 /* mapDiv */
@@ -498,7 +489,33 @@ footer{
     }
  
 }
+@media  screen and (max-width:380px){ 
+    header{
+        min-height: 38vh;
+        background-size: contain;
+        background-position: center;
+    }
+   
+    .productListDiv .product{
+        width: 40%;
+        height: 200px;
 
+    }
+    .aboutusSection .infoDiv{
+        font-size: 14px;
+    }
+    .contactDetail p{
+        font-size: 14px;
+    }
+
+    footer{
+        min-height: 10vh;
+        font-size: 10px;
+        
+        
+    }
+ 
+}
 
 
 
