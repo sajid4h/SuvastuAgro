@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('font-awesome.min.css');
-@import url('simpletextrotator.css');
 *{
     padding: 0;
     margin: 0;
@@ -21,7 +20,7 @@
     
     display: flex;
     flex-direction: column;
-    /* background-color: #000; */
+  
 }
 /* main contaner css end */
 
@@ -29,28 +28,32 @@
 a{
     color: black;
 }
+.fa-color{
+    
+    color: #00c1c1;
+    
+}
 
 header{
     /* background-color: aqua; */
     height: 80vh;
     width: 100%;
-
     background-image: url('../media/header/sssss.jpg');
-  
     background-size: cover;
     background-position: center;
    
     
 }
 .logo{
-    color:#03b6ecd5;
+    color:white;
     font-size: 25px;
     font-weight:700 ;
     
 }
 nav{
-    min-height: 15vh;
+    min-height: 10vh;
     width: 100%;
+    background-color: #00c1c1;
     position: fixed;
     z-index: 9999;
     display: flex;
@@ -62,17 +65,14 @@ nav{
 nav .navitem{
     display: flex;
     justify-content: space-evenly;
-    order:2;
-
-    
-    
+    order:2; 
 }
 .navitem li{
     padding:10px;
    
 }
 .navitem li a{
-    color:#000;
+    color:white;
 }
 
 .check{
@@ -119,7 +119,6 @@ nav .navitem{
 }
 .Nava:hover::after{
     content: '';
-            
     width: 100%;
     height: 2px;
     color: black;
@@ -234,13 +233,17 @@ background: linear-gradient(135deg, #74CCCC, #4B3BCA);
     
     display: flex;
     min-height: 25vh;
+    font-family: 'Open Sans', sans-serif;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    font-size: 14px;
+    line-height: 1.6em;
     
     
 }
+
 
 /* contactus css end */
 
@@ -253,7 +256,8 @@ background: linear-gradient(135deg, #74CCCC, #4B3BCA);
 
 /* footer css strart  */
 footer{
-    background-color: rgb(105,105,105);
+    /* background-color: rgb(105,105,105); */
+    background-color:#00c1c1;
     min-height: 10vh;
     width:100%;
     display: flex;
@@ -373,8 +377,8 @@ footer{
         font-size: 25px;
     }
      nav{
-        
         background-color:rgba(3, 3, 3, 0.15);
+    
         
     }
      nav .navitem{
@@ -456,7 +460,6 @@ footer{
     header{
         height: 30vh;
         width:100%;
-       
         background-size:contain ;
         background-position: center;
      
