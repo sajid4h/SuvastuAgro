@@ -147,7 +147,9 @@ nav .navitem{
     align-items: center;
     color:black;
     font-size: 46px;
-    color: rgb(153, 0, 241);
+    /* color: rgb(153, 0, 241); */
+    color:rgba(0, 193, 193, 1)
+    
     
     
 }
@@ -170,16 +172,15 @@ nav .navitem{
     min-height: 50vh;
     width: 100%;
     background-color: #ebedee;
-    /* background-image: url('../media/product/img1.jpg'); */
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 }
 .proudctH1{
     margin: 20px;
+   color: rgba(0, 193, 193, 1)
 }
 
 .productSection .productListDiv{
@@ -240,10 +241,11 @@ background: linear-gradient(135deg, #74CCCC, #4B3BCA);
     text-align: center;
     font-size: 14px;
     line-height: 1.6em;
-    
-    
+     
 }
-
+.contactDetail p{
+    color: #00c1c1;
+}
 
 /* contactus css end */
 
