@@ -217,7 +217,7 @@ background: linear-gradient(135deg, #74CCCC, #4B3BCA);
 
 /* contactus css start */
 .contactusSection{
-    min-height: 70vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -280,7 +280,6 @@ footer{
     }
     header nav{
         width: 100%;
-        background: transparent;
     }
   .aboutusSection{
     margin-top: 10px;
@@ -379,7 +378,12 @@ footer{
         font-size: 25px;
     }
      nav{
-        background-color:rgba(3, 3, 3, 0.15);
+        /* background-color:rgba(3, 3, 3, 0.15); */
+        min-height: 3vh;
+        display: flex;
+    
+        justify-content: space-around;
+        top: 30px;
     
         
     }
@@ -390,7 +394,7 @@ footer{
         
        
         background-color: rgba(0, 0, 0, 0.15);
-        /* background-color: aqua; */
+      
         display: flex;
         position: fixed;
         flex-direction: column;
@@ -469,15 +473,18 @@ footer{
     }
     nav{
         justify-content: space-around;
+       
+        
     }
   
     nav .navitem{
         /* position: fixed; */
        
         width: 100%;
-        
         min-height: 40vh;
-        background-color: rgba(0, 0, 0, 0.15);
+        /* background-color: rgba(0, 0, 0, 0.15); */
+        /* background-color: red; */
+        justify-content: center;
         top:115px;
     }
 @media  screen and (max-width:480px){ 
