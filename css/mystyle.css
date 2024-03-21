@@ -374,8 +374,7 @@ footer{
         /* background-repeat: no-repeat; */
     }
     .logo{
-        color: black;
-        font-size: 25px;
+        color:white;
     }
      nav{
         /* background-color:rgba(3, 3, 3, 0.15); */
@@ -391,10 +390,7 @@ footer{
         position: fixed;
         width: 100%;
         height: 40vh;
-        
-       
         background-color: rgba(0, 0, 0, 0.15);
-      
         display: flex;
         position: fixed;
         flex-direction: column;
@@ -408,7 +404,7 @@ footer{
       .checkbtn{
         display: flex;
         font-size: 25px;
-        color:#000;
+        color:white;
         font-weight:bolder;
         
     }
@@ -467,14 +463,10 @@ footer{
         height: 30vh;
         width:100%;
         background-size:contain ;
-        background-position: center;
-     
-       
+        background-position: center;   
     }
     nav{
-        justify-content: space-around;
-       
-        
+        justify-content: space-around;     
     }
   
     nav .navitem{
@@ -491,9 +483,7 @@ footer{
     }
     footer{
         min-height: 12vh;
-        font-size: 14px;
-        
-        
+        font-size: 14px;   
     }
  
 }
@@ -503,6 +493,10 @@ footer{
         background-size: contain;
         background-position: center;
     }
+    nav .navitem{
+        top:75px;
+    }
+    
    
     .productListDiv .product{
         width: 40%;
