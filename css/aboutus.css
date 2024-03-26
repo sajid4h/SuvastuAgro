@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('font-awesome.min.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+
+  
+}
+.aboutuscontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    color:white;
+    font-size: 25px;
+    font-weight:700 ;
+    
+}
+nav{
+    min-height: 10vh;
+    width: 100%;
+    background-color: #00c1c1;
+    /* position: fixed; */
+    /* z-index: 9999; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+   
+}
+.active{
+    color:rgb(153, 0, 241);
+    /* background: #000; */
+}
+nav .navitem{
+    display: flex;
+    justify-content: space-evenly;
+    order:2; 
+}
+.navitem li{
+    padding:10px;
+   
+}
+.navitem li a{
+    color:white;
+}
+
+.check{
+    color:aliceblue;
+    order: 3;
+    
+    
+}
+.checkbtnSpan{
+    background: #000;
+    font-size: 18px;
+}
+
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 18px;
+    color: aliceblue;
+    order:3;
+    display: none;
+}
+.Nava{
+    color: black;
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color:rgb(153, 0, 241);
+}
+.Nava:hover{
+
+    color:rgb(153, 0, 241);
+    transition: all 1s;
+}
+.Nava::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    color: black;
+    background-color: rgb(153, 0, 241);
+    transition: all 0.3s;
+
+}
+.Nava:hover::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    color: black;
+    background-color: rgb(153, 0, 241);
+    transition: all 0.5s;
+}
+
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainHeadingDiv{
+    width: 90%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:20px
+}
+.mainHeadingDiv h3{
+    color:#00c1c1;
+    font-size: 40px;
+}
+.maintxtDivInnerDiv h3{
+    color:#00c1c1;
+}
+.mainHeadingDiv p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
+}
+.maintxtDiv{
+    display: flex;
+    min-height: 70vh;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+
+
+}
+.maintxtDiv p{
+    font-size: 14px;
+    line-height: 2;
+    padding: 3px;
+}
+.leftDiv{
+    width: 35%;
+    
+}
+.centerDiv{
+    width: 30%;
+    height: 50vh;
+    background-image: url(../media/aboutus/aboutus.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+  
+}
+.centerDiv img{
+    width: 100%;
+ 
+}
+.rightDiv{
+    width: 35%;
+   
+}
+.maintxtDivInnerDiv{
+    margin: 10px;
+}
+
+/* crop pic section start */
+.cropsPicSection{
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+.cropListDiv{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cropDivHeading{
+    text-align: center;
+    margin: 20px 0px;
+    color:#00c1c1;
+    font-size: 40px;
+}
+.cropPic{
+    width: 25%;
+    height: 200px;
+    margin: 10px;
+   
+
+}
+.cropPic img{
+    width: 100%;
+    height: 200px;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.cropPic img:hover{
+    transform: scale(1.1);
+    transition: all 2s ease;
+}
+/* crop pic section end */
+
+footer{
+    /* background-color: rgb(105,105,105); */
+    background-color:#00c1c1;
+    min-height: 10vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ebedee;
+    margin-top: 5px;
+}
+/* contact us page html start */
+.mainSection{
+    display: flex;
+    margin-top: 20px;
+}
+.contactUsDiv{
+    min-height: 80vh;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.formDiv{
+    margin-top: 40px;
+    /* background: pink; */
+    width: 50%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;    
+    
+}
+.form input{
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form textarea{
+    width: 70%;
+    border-radius: 10px;
+    
+}
+.mybtn{
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #00c1c1;
+    color: white;
+    font-size: larger;
+}
+/* mapDiv */
+.mapDiv{
+    text-align: center;
+    margin: 10px;
+    
+}
+.contactDetail p{
+    color: #00c1c1;
+}
+.contactDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+}
+.fa-color{
+    color: #00c1c1; 
+}
+/* mapDiv end*/
+
+/* contact us page html end */
+
+/* product page css start */
+
+/* product css start */
+.productSection{
+    min-height: 50vh;
+    width: 100%;
+    background-color: #ebedee;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.proudctH1{
+    margin: 20px;
+   color: rgba(0, 193, 193, 1)
+}
+
+.productSection .productListDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.productListDiv .product{
+    width: 25%;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+background: #74CCCC;
+background: linear-gradient(135deg, #74CCCC, #4B3BCA);
+    
+}
+.product img{
+    width: 100%;
+    height: 200px;
+    background-attachment: fixed;
+    object-fit: contain;
+    background-position: center;
+    
+
+}
+.product img:hover{
+    /* width: 110%; */
+    height: 220px;
+    transition: all 2s;
+    
+}
+/* product css end *
+/* product page css end */
+
+
+
+@media screen and (max-width : 992px){
+    
+
+    nav{
+        width: 100%;
+    }
+.mainHeadingDiv h3{
+    font-size: 32px;
+}
+.maintxtDivInnerDiv h3{
+    font-size: 20px;
+}
+
+    footer{
+        font-size: medium;
+    }
+    @media screen and (max-width :830px){
+
+        .maintxtDiv{
+            margin-top: 40px;
+            /* flex-direction: column; */
+        }
+        .mainHeadingDiv h3{
+            font-size: 22px;
+        }
+
+    }
+
+    .maintxtDivInnerDiv h3{
+        font-size: 18px;
+    }
+    .cropsPicSection{
+        margin-top: 30px;
+    }
+
+    .mainSection{
+        margin-top: 0px;
+    }
+}
+@media  screen and (max-width:767px){
+    .logo{
+        color:white;
+    }
+     nav{
+        min-height: 10vh;
+        display: flex; 
+        /* top: 30px; */
+    
+        
+    }
+     nav .navitem{
+        position: fixed;
+        width: 100%;
+        height: 40vh;
+        background-color: rgba(0, 0, 0, 0.15);
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: start;
+        top:77px;
+        left: -100%;
+        text-align: center;
+        transition: all 2s;    
+    }
+      .checkbtn{
+        display: flex;
+        font-size: 25px;
+        color:white;
+        font-weight:bolder;
+        
+    }
+    #check:checked ~.navitem{
+        left: 0;
+    }
+   
+    .navitem li a{
+        font-size: 18px;
+    }
+    .mainSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactUsDiv{
+        width: 100%;
+    }
+    .formDiv{
+        width: 100%;
+    }
+}
+@media screen and ( max-width:600px){
+    .mainHeadingDiv h3{
+        font-size: 20px;
+    }
+    .maintxtDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftDiv{
+        width: 100%;
+    }
+    .centerDiv{
+        width: 100%;
+        margin-bottom: 10px;
+        /* background: #000; */
+    }
+    
+    .rightDiv{
+        width: 100%;
+    }
+    .cropsPicSection{
+        margin-top: 10px;
+    }
+}
+@media  screen and (max-width:480px){ 
+    .mainHeadingDiv h3{
+        text-align: center;
+    }
+    .cropPic{
+        width: 45%;
+    }
+    .cropDivHeading{
+        font-size: 35px;
+    }
+
+    footer{
+        min-height: 10vh;
+        font-size: 14px;   
+    }
+}
+@media  screen and (max-width:380px){ 
+    .cropDivHeading{
+        font-size: 25px;
+    }
+    .cropPic{
+        width: 40%;
+    }
+    .form{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        min-height: 10vh;
+        font-size: 10px;
+        
+        
+    }
+}
