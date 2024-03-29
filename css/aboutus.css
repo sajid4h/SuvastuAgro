@@ -207,6 +207,20 @@ nav .navitem{
     transition: all 2s ease;
 }
 /* crop pic section end */
+/* social link section start */
+.socialLinkDiv{
+    display: flex;
+    min-height: 15vh;
+    flex-direction: column;
+    align-items: center;
+    /* background:pink; */
+    justify-content: space-evenly;
+
+}
+.socialLinkDiv ul li a i{
+    color: #00c1c1;
+}
+/* social link section end */
 
 footer{
     /* background-color: rgb(105,105,105); */
@@ -487,9 +501,10 @@ background: linear-gradient(135deg, #74CCCC, #4B3BCA);
         flex-direction: column;
         align-items: center;
     }
+    
     footer{
         min-height: 10vh;
-        font-size: 8px;
+        font-size: 10px;
         
         
     }
